@@ -23,10 +23,10 @@ import os
 __version__ = (4, 2, 0, "dev", 0)
 
 
-default_app_config = "{{ project_name }}.apps.AppConfig"
+default_app_config = "project_sig.apps.AppConfig"
 
 
 def get_version():
-    import {{ project_name }}.version
+    import project_sig.version
 
-    return {{ project_name }}.version.get_version(__version__)
+    return project_sig.version.get_version(__version__)
