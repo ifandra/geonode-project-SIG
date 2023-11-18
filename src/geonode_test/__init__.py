@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # -*- coding: utf-8 -*-
 #########################################################################
 #
@@ -21,12 +19,14 @@
 #########################################################################
 
 import os
-import sys
+
+__version__ = (4, 2, 0, "dev", 0)
 
 
-if __name__ == "__main__":
-    from django.core.management import execute_from_command_line
+default_app_config = "geonode_test.apps.AppConfig"
 
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "geonode_test.settings")
-    print(sys.argv)
-    execute_from_command_line(sys.argv)
+
+def get_version():
+    import geonode_test.version
+
+    return geonode_test.version.get_version(__version__)

@@ -6,14 +6,14 @@ export SITEURL=http://localhost:8000/
 export ALLOWED_HOSTS="['localhost',]"
 
 export GEONODE_INSTANCE_NAME=geonode
-export DJANGO_SETTINGS_MODULE=project_sig.settings
-export GEONODE_DATABASE=project_sig
+export DJANGO_SETTINGS_MODULE=geonode_test.settings
+export GEONODE_DATABASE=geonode_test
 export GEONODE_DATABASE_PASSWORD=geonode
-export GEONODE_GEODATABASE=project_sig_data
+export GEONODE_GEODATABASE=geonode_test_data
 export GEONODE_GEODATABASE_PASSWORD=geonode
 
-export DATABASE_URL=postgis://project_sig:geonode@localhost:5432/project_sig
-export GEODATABASE_URL=postgis://project_sig_data:geonode@localhost:5432/project_sig_data
+export DATABASE_URL=postgis://geonode_test:geonode@localhost:5432/geonode_test
+export GEODATABASE_URL=postgis://geonode_test_data:geonode@localhost:5432/geonode_test_data
 export DEFAULT_BACKEND_DATASTORE=datastore
 
 export GEOSERVER_WEB_UI_LOCATION=http://localhost:8080/geoserver/

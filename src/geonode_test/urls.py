@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # -*- coding: utf-8 -*-
 #########################################################################
 #
@@ -20,13 +18,13 @@
 #
 #########################################################################
 
-import os
-import sys
+from geonode.urls import urlpatterns
 
-
-if __name__ == "__main__":
-    from django.core.management import execute_from_command_line
-
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "geonode_test.settings")
-    print(sys.argv)
-    execute_from_command_line(sys.argv)
+"""
+# You can register your own urlpatterns here
+urlpatterns = [
+    url(r'^/?$',
+        homepage,
+        name='home'),
+ ] + urlpatterns
+"""
